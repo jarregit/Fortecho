@@ -12,7 +12,7 @@
 
 Import-Module SqlServer 
 
-$configXML = Select-Xml -Path "C:\Scripts\Graphite-data\Scripts\klimadata.xml" -XPath "//Fortecho"
+$configXML = Select-Xml -Path "$PSScriptRoot\klimadata.xml" -XPath "//Fortecho"
 $config = $configXML.Node
 
 # Initialisering
