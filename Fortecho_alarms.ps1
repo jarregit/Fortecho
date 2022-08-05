@@ -16,13 +16,13 @@ Revisions
 .LINK
 .EXAMPLE
 .INPUTTYPE
-  xml-ish
+  csv-ish
 .RETURNVALUE
   None
 .COMPONENT
 #>
 
-$configXML = Select-Xml -Path "C:\USIT-Lenel\fortecho\Scripts\fortechoalarm.xml" -XPath "//Fortecho"
+$configXML = Select-Xml -Path "$scriptpath\fortechoalarm.xml" -XPath "//Fortecho"
 $config = $configXML.Node
 
 # Initialisering
