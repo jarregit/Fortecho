@@ -22,7 +22,7 @@ Revisions
 .COMPONENT
 #>
 
-$configXML = Select-Xml -Path "$scriptpath\fortechoalarm.xml" -XPath "//Fortecho"
+$configXML = Select-Xml -Path "$PSScriptRoot\fortechoalarm.xml" -XPath "//Fortecho"
 $config = $configXML.Node
 
 # Initialisering
